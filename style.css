@@ -1,0 +1,224 @@
+html {
+    background-color: antiquewhite;
+}
+
+header {
+    display: inline;
+    text-align: center;
+    padding: 1%;
+    margin: 2%, 2%, 1%, 5%;
+}
+
+#logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    display: inline;
+    margin-top: 10px;
+    float:left;
+}
+
+.nav {
+    display: inline;
+    text-align: right;
+    font-size: 24px;
+    color: black;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 73%;
+    padding: 1%;
+    margin-top: 10px;
+    float: right;
+}
+
+#hero {
+    height: 100%;
+    padding: 0px;
+    content: 500px;
+    background-color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.herocontent {
+    font-size: 32px;
+    font-family: cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-align: center;
+}
+h1 {
+    font-size: 68px;
+    color: black;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+h2 {
+    font-size: 48px;
+    color: black;
+    font-family: anisette-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+h4 {
+    font-size: 24px;
+    color: black;
+    font-family: anisette-petite, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li {
+    display: inline-block;
+    font-size: 24px;
+    align-items: right;
+    padding:center;
+}
+
+#footer{
+    Height: 100px;
+    width: 100%;
+    bottom: 0;
+    display: inline-flex;
+    background-color:white;
+    position: sticky;
+}
+
+ul{
+    display: inline;
+    vertical-align: top;
+}
+
+#socialmedia{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;  
+}
+
+.footerinline{
+    display: inline-flex;
+    text-align: top;
+    justify-content: flex-end;
+    padding:1%;
+    vertical-align: top;
+    float: right;
+}
+
+#skillset{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    padding:1%;
+    margin: 1%;
+}
+
+.skill{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+  font-size:32pt;
+  font-family: anisette-petite, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: orange;
+}
+
+p.skilluse{
+    font-size: 24px;
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+}
+
+#work{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.workex{
+    display:grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    title title title
+    images;
+}
+
+.title{
+    display:grid;
+    text-align: center;
+    align-items:center;
+}
+
+p.casestudies{
+    font-size: 24px;
+    font-family:cronos-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+}
+
+section{
+    padding: 5px;
+}
+
+.workex{
+    justify-content: center;
+}
+
+#connect{
+    display:flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px){
+    #skillset{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-around;
+        padding:1%;
+        margin: 1%;
+    }
+
+.skill{
+   display:flex;
+   flex-direction:column;
+   column-width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+ 
+#work{
+   display:grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas:
+   casestudy1
+   casestudy2
+   casestudy3;
+}
+
+.workex{
+   display:grid;
+   grid-template-columns: 33.3% 33.3% 33.3%;
+   grid-template-rows: 50% 50%;
+   grid-template-areas: 
+   title title title
+   images;
+}
